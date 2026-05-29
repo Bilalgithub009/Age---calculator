@@ -243,11 +243,10 @@ button:hover{
 
 /* Theme Button */
 .theme-btn{
-  position: absolute;
-  top: 20px;
-  right: 20px;
-
-  padding: 10px 15px;
+  position: relative;
+  top: 0px;
+  left: px;
+  padding: 10px px;
 
   border: none;
   border-radius: 12px;
@@ -265,10 +264,10 @@ button:hover{
 
 .history-btn{
       position:absolute;
-  top: 20px;
+  top: 10px;
   /* right: 120px; */
   left: 10px;
-  padding: 10px 15px;
+  padding: 1px 1px;
 
   border: none;
   border-radius: 12px;
@@ -509,4 +508,55 @@ body::before{
   opacity: 0;
   visibility: hidden;
   transition: 0.6s ease;
+}
+
+/* =========================
+   MOBILE RESPONSIVE FIXES
+========================= */
+@media (max-width: 768px) {
+
+  /* Card spacing better */
+  .card {
+    padding: 25px 15px;
+  }
+
+  /* Input full width fix */
+  .field input {
+    width: 100%;
+  }
+
+  .input-wrapper {
+    max-width: 100%;
+  }
+
+  /* Button group stack on mobile */
+  .btn-group {
+    flex-direction: column;
+  }
+
+  /* Theme button fix (right side) */
+  .theme-btn {
+    position: static;
+    bottom: 130px;
+    top: 10px;
+    right: 15px;
+    /* left: 50%; Override left for mobile */
+  }
+
+  /* History button fix */
+  .history-btn {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+  }
+
+  /* Result boxes full width spacing */
+  .result-box {
+    width: 100%;
+  }
+
+  /* Heading size adjust */
+  .card h1 {
+    font-size: 30px;
+  }
 }
