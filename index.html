@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Age Calculator</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="logo-circle"></div>
+      <h2>Age Calculator</h2>
+      <p>Preparing your experience...</p>
+
+      <div class="progress">
+        <div class="bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="card">
+
+      <!-- Theme -->
+      <button id="theme-toggle" class="theme-btn">
+        🌙 Dark Mode
+      </button>
+
+      <h1>Age <span>Calculator</span></h1>
+
+      <p class="subtitle">
+        Calculate your exact age easily
+      </p>
+
+      <!-- Inputs -->
+      <div class="input-wrapper">
+
+        <div class="field">
+          <label>Date of Birth</label>
+          <input type="date" id="birth-date">
+        </div>
+
+        <div class="field">
+          <label>Age at the Date of</label>
+          <input type="date" id="current-date">
+        </div>
+
+        <!-- Buttons -->
+        <div class="btn-group">
+
+          <button id="calculate-btn">
+            Calculate
+          </button>
+
+          <button id="reset-btn">
+            Reset
+          </button>
+
+          <button id="pdf-btn">
+            Download PDF
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- Result -->
+      <div class="result">
+
+        <div class="result-box">
+          <h2 id="years">00</h2>
+          <p>Years</p>
+        </div>
+
+        <div class="result-box">
+          <h2 id="months">00</h2>
+          <p>Months</p>
+        </div>
+
+        <div class="result-box">
+          <h2 id="days">00</h2>
+          <p>Days</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- jsPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <!-- JS File -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
