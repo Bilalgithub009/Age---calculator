@@ -243,10 +243,14 @@ button:hover{
 
 /* Theme Button */
 .theme-btn{
-  position: relative;
-  top: 0px;
-  left: px;
-  padding: 10px px;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  padding: 15px 15px 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
 
   border: none;
   border-radius: 12px;

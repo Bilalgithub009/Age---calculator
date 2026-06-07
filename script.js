@@ -10,6 +10,9 @@ const resetBtn = document.getElementById("reset-btn");
 const pdfBtn = document.getElementById("pdf-btn");
 const themeBtn = document.getElementById("theme-toggle");
 
+const toast = document.getElementById("toast");
+const progress = document.querySelector(".progress");
+
 // auto date
 window.addEventListener("DOMContentLoaded", () => {
     currentInput.value = new Date().toISOString().split("T")[0];
@@ -43,6 +46,8 @@ calculateBtn.addEventListener("click", () => {
     yearsEl.innerText = years;
     monthsEl.innerText = months;
     daysEl.innerText = days;
+
+
 });
 
 // reset
@@ -58,6 +63,13 @@ resetBtn.addEventListener("click", () => {
 // theme
 themeBtn.addEventListener("click", () => {
     document.body.classList.toggle("light");
+
+    if (document.body.classList.contains("light")) {
+        themeBtn.innerHTML = "☀️ Light Mode";
+        themeBtn.style.color = "#000";
+    } else {
+        themeBtn.innerHTML = "🌙 Dark Mode";
+    }
 });
 
 // PDF
