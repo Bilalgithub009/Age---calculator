@@ -564,3 +564,47 @@ body::before{
     font-size: 30px;
   }
 }
+
+.next-birthday{
+    margin-top:20px;
+    text-align:center;
+    padding:15px;
+    border-radius:12px;
+    background:rgba(255,255,255,0.08);
+}
+
+.next-birthday h3{
+    margin-bottom:8px;
+}
+
+#birthday-countdown{
+    font-size:1.2rem;
+    font-weight:600;
+}
+
+.born{
+    margin-top:20px;
+    text-align:center;
+    padding:15px;
+    border-radius:12px;
+    background:rgba(255,255,255,0.08);
+    text-align:left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.born h3{
+    margin-bottom:8px;
+}
+
+.zodiac{
+    margin-top:20px;
+    text-align:center;
+    padding:15px;
+    border-radius:12px;
+    text-align:left;
+        font-size: 18px;
+    font-weight: bold;
+
+    background:rgba(255,255,255,0.08);
+}
