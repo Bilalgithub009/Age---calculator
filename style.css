@@ -608,3 +608,84 @@ body::before{
 
     background:rgba(255,255,255,0.08);
 }
+
+.life-stats{
+    margin-top:20px;
+    padding:15px;
+    border-radius:12px;
+    background:rgba(255,255,255,0.08);
+}
+
+.life-stats h3{
+    margin-bottom:10px;
+}
+
+.life-stats p{
+    margin:8px 0;
+    font-size:16px;
+    font-weight:500;
+}
+
+#share-btn,
+#copy-btn{
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    margin:10px 5px;
+    font-size:15px;
+    font-weight:600;
+}
+
+#speak-btn{
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+}
+
+.share-card{
+    position: fixed;
+    top: -9999px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 360px;
+    padding: 25px 20px;
+    border-radius: 25px;
+
+    /* Glass Effect */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    color: #fff;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+/* Title */
+.share-card h2{
+    font-size: 22px;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+/* Text lines */
+.share-card p{
+    margin: 10px 0;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.95;
+}
+
+/* Highlight effect */
+.share-card p span{
+    font-weight: bold;
+    color: #00ffcc;
+}

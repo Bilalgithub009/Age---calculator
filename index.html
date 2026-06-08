@@ -71,6 +71,11 @@
 
         </div>
 
+        <button id="share-btn">📤 Share Result</button>
+        <button id="copy-btn">📋 Copy Result</button>
+        <button id="speak-btn">🔊 Read My Age</button>
+
+
       </div>
 
 
@@ -94,30 +99,39 @@
 
       </div>
 
-      <!-- Born Info -->
-
-      <!-- <div class="extra-info">
-        <p id="born-day">📅 Born On: --</p>
-        <p id="zodiac-sign">♈ Zodiac: --</p>
-      </div> -->
-
       <!-- birthday countdown -->
 
       <div class="next-birthday">
         <h3>🎂 Next Birthday In</h3>
         <p id="birthday-countdown">--</p>
-          
+
         <div class="extra-info">
-        <p class="born" id="born-day">📅 Born On: --</p>
-        <p class="zodiac" id="zodiac-sign">♈ Zodiac: --</p>
+          <p class="born" id="born-day">📅 Born On: --</p>
+          <p class="zodiac" id="zodiac-sign">♈ Zodiac: --</p>
+        </div>
       </div>
 
-         
+      <div class="life-stats">
+        <h3>📊 Total Time Lived</h3>
+
+        <p id="total-days">📅 Days: 0</p>
+        <p id="total-hours">⏰ Hours: 0</p>
+        <p id="total-minutes">⏱ Minutes: 0</p>
+        <p id="total-seconds">⚡ Seconds: 0</p>
       </div>
-
-
 
     </div>
+
+  </div>
+
+
+  <div id="share-card" class="share-card">
+    <h2>🎂 Age Report</h2>
+
+    <p id="sc-age">Age: --</p>
+    <p id="sc-birthday">Next Birthday: --</p>
+    <p id="sc-born">Born On: --</p>
+    <p id="sc-zodiac">Zodiac: --</p>
 
   </div>
 
@@ -125,6 +139,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
   <!-- JS File -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
   <script src="script.js"></script>
 
 </body>
